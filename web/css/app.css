@@ -1,0 +1,50 @@
+/* font google*/
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+html,body {
+  height:100%;
+  padding-top: 2.5em;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size:2em;
+  color:#DDCCEE;
+}
+img{
+  display: none;
+}
+.lead {
+	color:#DDCCEE;
+}
+#entete{
+  background-color: rgb(54, 56, 61);
+}
+
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:50%;
+  color:#eee;
+  overflow:hidden;
+}
+
+.container-full a {
+  color:#efefef;
+  text-decoration:none;
+}
+
+.v-center {
+  margin-top:7%;
+}
+@media screen and (min-width:755px) {
+  /*Display img sur ecran moyen*/
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+}

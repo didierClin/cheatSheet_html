@@ -26,10 +26,121 @@
 </head>
 <body>
 
-  Mon Cheat-Sheet HTML
+
+  <!-- Creation de mon entete -->
+  <header class="container-full">
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">CheatSheet HTML by Didier_Rbx</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#ST">Structure</a></li>
+            <li><a href="#P">paragraphes</a></li>
+            <li><a href="#UL">listes</a></li>
+            <li><a href="#A">liens</a></li>
+            <li><a href="#IMG">Images</a></li>
+            <li><a href="#TAB">Tableaux</a></li>
+            <li><a href="#FM">formulaires</a></li>
+            <li><a href="#ENT">entités</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+            <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
+    </div> <!-- /row -->
+  </header> <!-- /container full -->
+  <div class="">
+
+    <p>
+      <h2><a href="structure_pageHTML.html">La structure d'une page HTML</a></h2>
+
+      le doctype : première ligne qui definit que le fichier est de type document HTML.
+      <br/> le head : Partie déclarative du fichier, elle comprend les balises Title, meta, scripts additionnels. N'est pas affichée.
+      <br/> le body : contient le code qui génère la page dans le navigateur
+      <br/>
+    </p>
+    <p id="lesBalises">les balises structurantes:
+      <ul>
+        <li>&lt;p&gt;&lt;/p&gt;: délimite un paragraphe,</li>
+        <li>&lt;br/&gt; : c'est une balise orpheline qui ajoute un retour à la ligne,</li>
+        <li>&lt;hx&gt;&lt;/hx&gt;: balises titres, x variant de 1 à 6 par ordre d'importance.
+          <br/> h1 pour un titre important, h2 pour un sous-titre, etc..
+          <br/>
+        </li>
+        <li>&lt;em&gt;&lt;/em&gt;: mise en valeur faible d'un mot, d'une phrase,</li>
+        <li>&lt;strong&gt;&lt;/strong&gt;: mise en valeur plus importante,</li>
+      </ul>
+    </p>
+    <p id="lesListes"> Les listes:
+      <ul>
+        <li>&lt;ul&gt;&lt;/ul&gt;: liste à puce non ordonnée, </li>
+        <li>&lt;ol&gt;&lt;/ol&gt;: liste ordonnée (numérotée), </li>
+        <li>&lt;li&gt;&lt;/li&gt;: délimite un élément de liste ul et ol, </li>
+      </ul>
+    </p>
+    <p id="lesLiens"> Les liens:
+      <ul>
+        <li>&lt;a href="http://lien_externe.html"&gt;&lt;/a&gt;: lien absolu qui référence un lien externe à la page, </li>
+        <li>&lt;a href="[chemin/]ma_page_interne.html"&gt;&lt;/a&gt;: lien relatif qui référence un lien interne, </li>
+        <li>&lt;a href="#"&gt;&lt;/a&gt;: lien vide,</li>
+        <li>&lt;a href="#Ancre"&gt;&lt;/a&gt;: lien qui référence une ancre de la page en cours, </li>
+        <li>&lt;a href="[chemin/]ma_page_interne.html#Ancre"&gt;&lt;/a&gt;: lien relatif vers une ancre d'un lien interne, </li>
+        <br/>
+        <li>&lt;a href="mailto:"monAdresse@mail"&gt;&lt;/a&gt;: lien vers une adresse mail,</li>
+        <li>&lt;a href="fic_download.zip"&gt;&lt;/a&gt;: lien de téléchargement du fichier fic_download.zip,</li>
+      </ul>
+      Attributs des liens:
+      <br/>
+      <ul>
+        <li>title : affiche une info-bulle lors du pointage de la souris,</li>
+        <li>target="_blanck" : ouvre le lien dans une nouvelle fenetre, </li>
+      </ul>
+    </p>
+
+    <div id="lesImages"> Les images: Elements essentiels d'un site, trois formats principaux suivant l'usage:
+      <ul>
+        <li>JPEG : format léger adapté aux images,</li>
+        <li>PNG : pour les graphiques hors images, codage en 8 et 24 bits qui n'altère pas la qualité d'image et permet les effets de transparence,</li>
+        <li>GIF : pour les images animées,</li>
+      </ul>
+      <p>
+        Une image est insérée via la balise orpheline &lt;img&gt;
+        <br/> l'attribut src="chemin" indique l'adresse de l'image
+        <br/> alt ="description" : texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,
+        <br/> title="message" : affichage infobulle.
+        <br/> Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle.
+        <br/> exemple:
+        <br/>
+        <a href="web/img/simplon_gateaux.jpg">
+          <img class="logo" src="web/img/htmlCss.png">
+        </a> &lt;a href="web/img/simplon_gateaux.jpg"&gt; &lt;img src="web/img/htmlCss.png"&gt;
+        <br/>
+
+      </p>
+
+    </div>
+    <div class="lesFigures">Les figures:
+      <br/> Les figures sont des éléments qui viennent agrémenter un texte.
+      <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
+      <p>
+        &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens:
+        <br/>
+        <ul>
+          <li></li>
+        </ul>
+
+      </p>
+
+    </div>
+
+  </div>
 
 
-  
+
 
 </body>
 </html>
