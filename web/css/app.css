@@ -3,7 +3,8 @@
 
 html,body {
   height:100%;
-  padding-top: 2.5em;
+  margin-top: 3em;
+  font-size: 1em;
 }
 
 h1 {
@@ -13,6 +14,11 @@ h1 {
 }
 img{
   display: none;
+}
+.logo{
+  display: block;
+  height: 5em;
+  width: auto;
 }
 .lead {
 	color:#DDCCEE;
@@ -38,13 +44,22 @@ img{
 .v-center {
   margin-top:7%;
 }
+dt{
+  margin-left: 1.5em;
+}
+dd{
+  margin-left: 3em;
+}
+dl ul li {
+  margin-left: 3em;
+}
 @media screen and (min-width:755px) {
   /*Display img sur ecran moyen*/
     img{
       display: block;
       max-width: 100%;
       height: auto;
-      margin: auto;
+      margin: 1em auto;
     }
 
 }

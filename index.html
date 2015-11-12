@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,9 @@
   <link  rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link  rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     ajout des css en local-->
-  <link  rel="stylesheet"   href="bootstrap/css/bootstrap.min.css">
-  <link  rel="stylesheet"   href="bootstrap/css/bootstrap-theme.min.css">
-  <link  rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- mon code css -->
   <link rel="stylesheet" href="web/css/app.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,6 +25,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
 
 
@@ -32,13 +34,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top ">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">CheatSheet HTML by Didier_Rbx</a>
+          <a class="navbar-brand" href="#">CheatSheet HTML</a>
         </div>
         <div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#ST">Structure</a></li>
-            <li><a href="#P">paragraphes</a></li>
+            <li class="active"><a href="#ST">Structure</a></li>
+            <li><a href="#P">Balises structurantes</a></li>
             <li><a href="#UL">listes</a></li>
             <li><a href="#A">liens</a></li>
             <li><a href="#IMG">Images</a></li>
@@ -50,97 +51,264 @@
       </div>
     </nav>
     <div class="row">
-            <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
-    </div> <!-- /row -->
-  </header> <!-- /container full -->
-  <div class="">
+      <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
+    </div>
+    <!-- /row -->
+  </header>
+  <!-- /container full -->
 
-    <p>
-      <h2><a href="structure_pageHTML.html">La structure d'une page HTML</a></h2>
 
-      le doctype : première ligne qui definit que le fichier est de type document HTML.
-      <br/> le head : Partie déclarative du fichier, elle comprend les balises Title, meta, scripts additionnels. N'est pas affichée.
-      <br/> le body : contient le code qui génère la page dans le navigateur
-      <br/>
-    </p>
-    <p id="lesBalises">les balises structurantes:
-      <ul>
-        <li>&lt;p&gt;&lt;/p&gt;: délimite un paragraphe,</li>
-        <li>&lt;br/&gt; : c'est une balise orpheline qui ajoute un retour à la ligne,</li>
-        <li>&lt;hx&gt;&lt;/hx&gt;: balises titres, x variant de 1 à 6 par ordre d'importance.
-          <br/> h1 pour un titre important, h2 pour un sous-titre, etc..
-          <br/>
-        </li>
-        <li>&lt;em&gt;&lt;/em&gt;: mise en valeur faible d'un mot, d'une phrase,</li>
-        <li>&lt;strong&gt;&lt;/strong&gt;: mise en valeur plus importante,</li>
-      </ul>
-    </p>
-    <p id="lesListes"> Les listes:
-      <ul>
-        <li>&lt;ul&gt;&lt;/ul&gt;: liste à puce non ordonnée, </li>
-        <li>&lt;ol&gt;&lt;/ol&gt;: liste ordonnée (numérotée), </li>
-        <li>&lt;li&gt;&lt;/li&gt;: délimite un élément de liste ul et ol, </li>
-      </ul>
-    </p>
-    <p id="lesLiens"> Les liens:
-      <ul>
-        <li>&lt;a href="http://lien_externe.html"&gt;&lt;/a&gt;: lien absolu qui référence un lien externe à la page, </li>
-        <li>&lt;a href="[chemin/]ma_page_interne.html"&gt;&lt;/a&gt;: lien relatif qui référence un lien interne, </li>
-        <li>&lt;a href="#"&gt;&lt;/a&gt;: lien vide,</li>
-        <li>&lt;a href="#Ancre"&gt;&lt;/a&gt;: lien qui référence une ancre de la page en cours, </li>
-        <li>&lt;a href="[chemin/]ma_page_interne.html#Ancre"&gt;&lt;/a&gt;: lien relatif vers une ancre d'un lien interne, </li>
-        <br/>
-        <li>&lt;a href="mailto:"monAdresse@mail"&gt;&lt;/a&gt;: lien vers une adresse mail,</li>
-        <li>&lt;a href="fic_download.zip"&gt;&lt;/a&gt;: lien de téléchargement du fichier fic_download.zip,</li>
-      </ul>
-      Attributs des liens:
-      <br/>
-      <ul>
-        <li>title : affiche une info-bulle lors du pointage de la souris,</li>
-        <li>target="_blanck" : ouvre le lien dans une nouvelle fenetre, </li>
-      </ul>
-    </p>
 
-    <div id="lesImages"> Les images: Elements essentiels d'un site, trois formats principaux suivant l'usage:
-      <ul>
-        <li>JPEG : format léger adapté aux images,</li>
-        <li>PNG : pour les graphiques hors images, codage en 8 et 24 bits qui n'altère pas la qualité d'image et permet les effets de transparence,</li>
-        <li>GIF : pour les images animées,</li>
-      </ul>
-      <p>
-        Une image est insérée via la balise orpheline &lt;img&gt;
-        <br/> l'attribut src="chemin" indique l'adresse de l'image
-        <br/> alt ="description" : texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,
-        <br/> title="message" : affichage infobulle.
-        <br/> Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle.
-        <br/> exemple:
-        <br/>
-        <a href="web/img/simplon_gateaux.jpg">
-          <img class="logo" src="web/img/htmlCss.png">
-        </a> &lt;a href="web/img/simplon_gateaux.jpg"&gt; &lt;img src="web/img/htmlCss.png"&gt;
-        <br/>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10" id="ST">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>La structure d'une page HTML:</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <p class="panel-body">
+                <dl>
+                  <dt> le doctype :</dt>
+                  <dd> première ligne pour definir un document HTML en version 5.</dd>
+                  <dt> le head :</dt>
+                  <dd> Partie déclarative non affichée du fichier, elle comprend les balises Title, meta, les appels de scripts css et js additionnels.</dd>
+                  <dt> le body :</dt>
+                  <dd> contient le code qui génère la page dans le navigateur client.</dd>
+                </dl>
+                <dl>
+                  <dt>&lt;element&gt;&lt;/element&gt; :</dt>
+                  <dd> élément HTML composé d'un couple de balises ouvrante et fermante,
+                    <dt>&lt;element /&gt; :</dt>
+                    <dd> balise de type orpheline, ne nécessite pas de fermeture,
+                </dl>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="web/img/structure_fichier_html.jpeg" alt="Structure_fichier_html" title="structure minimale d'un fichier html" />
+                <figcaption>Minimum syndical</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10" id="P">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Les balises structurantes :</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>&lt;header&gt;&lt;/header&gt;: délimite une zone d'entête,</li>
+              <li>&lt;section&gt;&lt;/section&gt;: délimite une section d'affichage,</li>
+              <li>&lt;aside&gt;&lt;/aside&gt;: délimite une zone latérale d'affichage,</li>
+              <li>&lt;footer&gt;&lt;/footer&gt;: délimite une zone de pied de page,</li>
+              <li>&lt;p&gt;&lt;/p&gt;: délimite un paragraphe,</li>
+              <li>&lt;br/&gt; : c'est une balise orpheline qui ajoute un retour à la ligne,</li>
+              <li>&lt;hx&gt;&lt;/hx&gt;: balises titres, x variant de 1 à 6 par ordre d'importance.
+                <br/> h1 pour le titre principal, h2 pour un sous-titre, etc..
+                <br/>
+              </li>
+              <li>&lt;em&gt;&lt;/em&gt;: mise en valeur faible d'un mot, d'une phrase,</li>
+              <li>&lt;strong&gt;&lt;/strong&gt;: mise en valeur plus importante,</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10" id="UL">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Les listes:</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <dl>
+                  <dt> &lt;ul&gt; &lt;/ul&gt; :</dt>
+                  <dd> liste non ordonnée (à puce), </dd>
+                  <dt> &lt;ol&gt; &lt;/ol&gt; :</dt>
+                  <dd> liste ordonnée (numérotée), </dd>
+                </dl>
+                <p>
+                  les éléments des listes ul et ol :
+                </p>
+                <ul>
+                  <li>&lt;li&gt;&lt;/li&gt;:</li>
+                  <li> délimite un élément de liste ul et ol, </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <dl>
+                  <dt>&lt;dl&gt;&lt;/dl&gt;:</dt>
+                  <dd> liste descriptive, </dd>
+                </dl>
+                <p>
+                  les éléments des listes dl :
+                </p>
+                <ol>
+                  <li>&lt;dt&gt;&lt;/dt&gt;: nom de l'élément, </li>
+                  <li>&lt;dd&gt;&lt;/dd&gt;: description de l'élément. </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10" id="A">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Les liens:</h3>
+          </div>
+          <div class="panel-body">
+            <dl>
+              <dt>&lt;a href="http://lien_externe.html"&gt;&lt;/a&gt;:</dt>
+              <dd> lien absolu qui référence un lien externe à la page, </dd>
+              <dt>&lt;a href="[chemin/]ma_page_interne.html"&gt;&lt;/a&gt;:</dt>
+              <dd> lien relatif qui référence un lien interne, </dd>
+              <dt>&lt;a href="#"&gt;&lt;/a&gt;:</dt>
+              <dd> lien vide,</dd>
+              <dt>&lt;a href="#Ancre"&gt;&lt;/a&gt;:</dt>
+              <dd> lien qui référence une ancre de la page en cours, </dd>
+              <dt>&lt;a href="[chemin/]ma_page_interne.html#Ancre"&gt;&lt;/a&gt;:</dt>
+              <dd> lien relatif vers une ancre d'un lien interne, </dd>
+              <dt>&lt;a href="mailto:"monAdresse@mail"&gt;&lt;/a&gt;:</dt>
+              <dd> lien vers une adresse mail,</dd>
+              <dt>&lt;a href="fic_download.zip"&gt;&lt;/a&gt;:</dt>
+              <dd> lien de téléchargement du fichier fic_download.zip,</dd>
+            </dl>
+            Attributs des liens:
 
-      </p>
+            <dl>
+              <dt>title :</dt>
+              <dd> affiche une info-bulle au survol de la souris,</dd>
+              <dt>target="_blanck" :</dt>
+              <dd> ouvre le lien dans une nouvelle fenetre, </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-offset-1 col-md-10" id="IMG">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Les images:</h3>
+          </div>
+          <div class="panel-body">Elements essentiels d'un site, trois formats principaux suivant l'usage:
+            <ul>
+              <li>JPEG : format léger adapté aux images,</li>
+              <li>PNG : pour les graphiques hors images, codage en 8 et 24 bits qui n'altère pas la qualité d'image et permet les effets de transparence,</li>
+              <li>GIF : pour les images animées,</li>
+            </ul>
+            <dl>
+              <dt>&lt;img&gt; :</dt>
+              <dd>balise orpheline pour insérer l'image,</dd>
+              <ul>
+                <li> src="chemin": attribut indique l'adresse de l'image</li>
+                <li> alt ="description" : attribut texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,</li>
+                <li> title="message" : affichage infobulle.</li>
+              </ul>
+            </dl>
+            <div class="row">
+              <div class="col-md-8 jumbotron">
+                Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle. exemple:
+                <br />&lt;a href="GrandeImage.jpg"&gt; &lt;img src="vignette.png"&gt;
+              </div>
+              <div class="col-md-4">
+                <a href="web/img/simplon_gateaux.jpg">
+                  <img class="logo" src="web/img/htmlCss.png" alt="exemple lien thumbnail" title="Cliquez pour afficher en grand">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="lesFigures">Les figures:
+            <br/> Les figures sont des éléments qui viennent agrémenter un texte.
+            <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
+            <p>
+              &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens:
+              <br/>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-offset-1 col-md-10" id="TAB">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Les tableaux:</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <dl>
+                  <dt>&lt;table&gt;&lt;/table&gt; :</dt>
+                  <dd>Balises création de tableau</dd>
+                </dl>
+                <ul>
+                  <li>caption : donner une courte légende au tableau,</li>
+                  <li>&lt;thead&gt;&lt;/thead&gt; : pour afficher le nom des colonnes,</li>
+                  <li>&lt;tbody&gt;&lt;/tbody&gt; : corps du tableau avec les cellules contenant les données,</li>
+                  <li>&lt;tfoot&gt;&lt;/tfoot&gt; : footer du tableau,</li>
+                </ul>
+                <dl>
+                  <dt>caption : </dt>
+                  <dd>donner une courte légende au tableau,</dd>
+                  <dt>&lt;thead&gt;&lt;/thead&gt; :</dt>
+                  <dd>pour afficher le nom des colonnes,</dd>
+                  <dt>&lt;tbody&gt;&lt;/tbody&gt; :</dt>
+                  <dd>corps du tableau avec les cellules contenant les données,</dd>
+                  <dt>&lt;tfoot&gt;&lt;/tfoot&gt; :</dt>
+                  <dd>footer du tableau,</dd>
+                </dl>
+              </div>
+              <div class="col-lg-6">
+                <img src="web/img/tableau_HTML.jpeg" alt="Structure d'un tableau" title="exemple de tableau">
+              </div>
+
+            </div>
+            <ul>
+              <li> src="chemin": attribut indique l'adresse de l'image</li>
+              <li> alt ="description" : attribut texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,</li>
+              <li> title="message" : affichage infobulle.</li>
+            </ul>
+            </dl>
+            <p class="row">
+              <div class="col-md-4">
+                Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle. exemple:
+              </div>
+              <div class="col-md-8">
+                <a href="web/img/simplon_gateaux.jpg">
+                  <img class="logo" src="web/img/htmlCss.png" alt="exemple lien thumbnail" title="Cliquez pour afficher en grand">
+                </a> &lt;a href="GrandeImage.jpg"&gt; &lt;img src="vignette.png"&gt;
+              </div>
+            </p>
+          </div>
+          <div class="lesFigures">Les figures:
+            <br/> Les figures sont des éléments qui viennent agrémenter un texte.
+            <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
+            <p>
+              &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens:
+              <br/>
+              <ul>
+                <li></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
 
     </div>
-    <div class="lesFigures">Les figures:
-      <br/> Les figures sont des éléments qui viennent agrémenter un texte.
-      <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
-      <p>
-        &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens:
-        <br/>
-        <ul>
-          <li></li>
-        </ul>
-
-      </p>
-
-    </div>
-
   </div>
-
-
-
-
+  <!-- jquery necessaire pour bootstrap -->
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 </body>
+
 </html>
