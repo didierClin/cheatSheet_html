@@ -12,9 +12,10 @@ h1 {
   font-size:2em;
   color:#DDCCEE;
 }
-/*img{
+/* display none car class hidden laisse un emplacement vide?*/
+img{
   display: none;
-}*/
+}
 .logo{
   display: block;
   height: 5em;
@@ -40,9 +41,14 @@ h1 {
   color:#efefef;
   text-decoration:none;
 }
-
-.v-center {
-  margin-top:7%;
+#Archi #Balises {
+  margin-top: 5%;
+}
+.v-center, article {
+  margin-top:10%;
+}
+article {
+  margin-top:10%;
 }
 dt{
   margin-left: 1.5em;

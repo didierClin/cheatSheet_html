@@ -36,30 +36,27 @@
         </div>
         <section id="nav"> <!--Section Menu -->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#ST">Architecture</a></li>
-            <li><a href="#P">structurer</a></li>
-            <li><a href="#UL">listes</a></li>
-            <li><a href="#A">liens</a></li>
-            <li><a href="#IMG">Images</a></li>
-            <li><a href="#TAB">Tableaux</a></li>
-            <li><a href="#FM">formulaires</a></li>
-            <li><a href="#ENT">entités</a></li>
+            <li class="active"><a href="#Archi">Architecture</a></li>
+            <li><a href="#Balises">structurer</a></li>
+            <li><a href="#Listes">listes</a></li>
+            <li><a href="#Liens">liens</a></li>
+            <li><a href="#Images">Images</a></li>
+            <li><a href="#Tableau">Tableaux</a></li>
+            <li><a href="#">formulaires</a></li>
+            <li><a href="#">entités</a></li>
           </ul>
         </section> <!--Section Menu -->
       </div>
     </nav>
-    <div class="row hidden-xs hidden-sm">
-      <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
-    </div>
-    <!-- /row -->
-  </header>
-  <!-- /container full -->
-
-
-
-  <article class="container-fluid">
     <div class="row">
-      <div class="col-md-offset-1 col-md-10" id="ST">
+      <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
+    </div> <!-- /row -->
+  </header> <!-- /container full -->
+
+  <hr id="ST">
+  <article class="container-fluid">
+    <section id="Archi" class="row">
+      <div class="col-md-offset-1 col-md-10">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3>La structure d'une page HTML:</h3>
@@ -91,9 +88,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-offset-1 col-md-10" id="P">
+    </section> <!--Section Archi -->
+    <section class="row" id="Balises">
+      <div class="col-md-offset-1 col-md-10">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3>Les balises structurantes :</h3>
@@ -116,8 +113,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
+    </section> <!-- section Balises -->
+    <section class="row" id="Listes">
       <div class="col-md-offset-1 col-md-10" id="UL">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -157,8 +154,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
+    </section>
+    <!-- section Listes -->
+    <section class="row" id="Liens">
       <div class="col-md-offset-1 col-md-10" id="A">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -192,7 +190,9 @@
           </div>
         </div>
       </div>
-
+    </section>
+    <!--Section Liens -->
+    <section class="row" id="Images">
       <div class="col-md-offset-1 col-md-10" id="IMG">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -235,7 +235,9 @@
           </div>
         </div>
       </div>
-
+    </section>
+    <!-- section Images -->
+    <section class="row" id="Tableau">
       <div class="col-md-offset-1 col-md-10" id="TAB">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -291,11 +293,13 @@
             <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
             <p>
               &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens: </p>
-              <br/>
+            <br/>
 
           </div>
         </div>
       </div>
+    </section>
+    <!-- section Images -->
 
 
     </div>
