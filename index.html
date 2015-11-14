@@ -28,9 +28,8 @@
 
 
   <!-- Creation de mon entete -->
-  <header class="container-full">
+  <header class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top ">
-      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -38,27 +37,27 @@
           </button>
           <a class="navbar-brand" href="#">&copy; CheatSheet HTML</a>
         </div>
-<!--        <div class="navbar-header">
-          <a class="navbar-brand" href="#"></a>
-        </div>
-        <section id="nav"> <!--Section Menu -->
-          <ul id="navbar" class="navbar-collapse collapse navbar-right">
-            <li class="active"><a href="#Archi">Architecture</a></li>
-            <li><a href="#Balises">structurer</a></li>
-            <li><a href="#Listes">listes</a></li>
-            <li><a href="#Liens">liens</a></li>
-            <li><a href="#Images">Images</a></li>
-            <li><a href="#Tableau">Tableaux</a></li>
-            <li><a href="#">formulaires</a></li>
-            <li><a href="#">entités</a></li>
-          </ul>
-        </section> <!--Section Menu -->
+        <ul id="navbar" class="navbar-collapse collapse navbar-right">
+          <li class="active"><a href="#Archi"><button type="button" class="btn btn-info">Architecture</button></a></li>
+          <li><a href="#Balises"><button type="button" class="btn btn-info">structurer</button></a></li>
+          <li><a href="#Listes"><button type="button" class="btn btn-info">listes</button></a></li>
+          <li><a href="#Liens"><button type="button" class="btn btn-info">liens</button></a></li>
+          <li><a href="#Images"><button type="button" class="btn btn-info">Images</button></a></li>
+          <li><a href="#Tableau"><button type="button" class="btn btn-info">Tableaux</button></a></li>
+          <li><a href="#"><button type="button" class="btn btn-info">formulaires</button></a></li>
+          <li><a href="#"><button type="button" class="btn btn-info">entités</button></a></li>
+        </ul>
+        </section>
+        <!--Section Menu -->
       </div>
     </nav>
+    <!--  Image entete moyen et gd formats -->
     <div class="row ">
       <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
-    </div> <!-- /row -->
-  </header> <!-- /container full -->
+    </div>
+    <!-- /row -->
+  </header>
+  <!-- /header -->
 
   <hr id="ST">
   <article class="container-fluid">
@@ -95,7 +94,8 @@
           </div>
         </div>
       </div>
-    </section> <!--Section Archi -->
+    </section>
+    <!--Section Archi -->
     <section class="row" id="Balises">
       <div class="col-md-offset-1 col-md-10">
         <div class="panel panel-default">
@@ -120,7 +120,8 @@
           </div>
         </div>
       </div>
-    </section> <!-- section Balises -->
+    </section>
+    <!-- section Balises -->
     <section class="row" id="Listes">
       <div class="col-md-offset-1 col-md-10" id="UL">
         <div class="panel panel-default">
@@ -252,7 +253,7 @@
           </div>
           <div class="panel-body">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-4">
                 <dl>
                   <dt>&lt;table&gt;&lt;/table&gt; :</dt>
                   <dd>Balises création de tableau</dd>
@@ -277,32 +278,12 @@
               <div class="col-lg-6">
                 <img src="web/img/tableau_HTML.jpeg" alt="Structure d'un tableau" title="exemple de tableau">
               </div>
+              <div class="col-lg-2">
+                <img src="web/img/tableau_html5.png" alt="visuel Structure d'un tableau" title="Affichage du tableau">
+              </div>
 
             </div>
-            <ul>
-              <li> src="chemin": attribut indique l'adresse de l'image</li>
-              <li> alt ="description" : attribut texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,</li>
-              <li> title="message" : affichage infobulle.</li>
-            </ul>
-            <div class="row">
-              <div class="col-md-4">
-                Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle. exemple:
-              </div>
-              <div class="col-md-8">
-                <a href="web/img/simplon_gateaux.jpg">
-                  <img class="logo" src="web/img/htmlCss.png" alt="exemple lien thumbnail" title="Cliquez pour afficher en grand">
-                </a> &lt;a href="GrandeImage.jpg"&gt; &lt;img src="vignette.png"&gt;
-              </div>
-            </div>
-          </div>
-          <div class="lesFigures">Les figures:
-            <br/> Les figures sont des éléments qui viennent agrémenter un texte.
-            <br/> Une figure peut prendre la forme d'une image, d'un code source, d'une citation, etc..
-            <p>
-              &lt;figure&gt;&lt;/figure&gt;: balises de création, Attributs des liens: </p>
-            <br/>
 
-          </div>
         </div>
       </div>
     </section>
