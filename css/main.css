@@ -5,14 +5,12 @@
    ========================================================================== */
 body { background-color: lightgray;}
 .logo { display: none; }
-
-/*  Mise en page temporaire */
-.one{background-color: orange;}
-.two{background-color: green;}
-.three{background-color: lightblue;}
-.for{background-color: lightgray;}
-.five{background-color: darkgray;}
-
+.struc { max-width: 20em; height: auto;}
+.logoJumbo  { display: block; width: 10em; height: auto; margin: 1.5 auto 1.5;}
+/* marge des elements de tableaux dl */
+dt{ margin-left: 5%;}
+dd{  margin-left: 20%;}
+/* Affichage du logo au dessus du format tab */
 @media screen and (min-width: 768px) {
-  .logo { display: block;}
+  .logo { display: block; margin: 3.5em auto 1.5em }
 }
