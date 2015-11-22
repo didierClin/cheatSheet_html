@@ -3,7 +3,7 @@
 
 html,body {
   height:100%;
-  margin-top: 3em;
+  margin-top: 1.5em;
   font-size: 1em;
 }
 
@@ -12,10 +12,10 @@ h1 {
   font-size:2em;
   color:#DDCCEE;
 }
-/* display none car class hidden laisse un emplacement vide?*/
+/* display none car class hidden laisse un emplacement vide?
 img{
   display: none;
-}
+}*/
 .logo{
   display: block;
   height: 5em;
@@ -24,8 +24,20 @@ img{
 .lead {
 	color:#DDCCEE;
 }
-#entete{
+header{
+  margin-right: 1em;
+}
+header ul {
+  display: inline-block;
+  margin: auto 1em;
+  padding-top: 1em;
+  vertical-align: middle;
   background-color: rgb(54, 56, 61);
+}
+#navbar li {
+  display: inline;
+  text-decoration: none;
+  color: blue;
 }
 
 /* Custom container */
@@ -41,8 +53,10 @@ img{
   color:#efefef;
   text-decoration:none;
 }
-#Archi #Balises {
+.panel-heading {
   margin-top: 5%;
+  padding: 2% auto;
+  background-color: rgb(34, 111, 135);
 }
 .v-center, article {
   margin-top:10%;
@@ -58,6 +72,12 @@ dd{
 }
 dl ul li {
   margin-left: 3em;
+}
+#butTab{
+  height: auto;
+  width: auto;
+  margin: auto;
+  vertical-align: middle;
 }
 @media screen and (min-width:755px) {
   /*Display img sur ecran moyen*/

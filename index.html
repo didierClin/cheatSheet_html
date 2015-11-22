@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- mon code css -->
   <link rel="stylesheet" href="web/css/app.css">
+  <!-- favicon HTML5 -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+  <!-- /  favicon HTML5 -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -25,8 +29,6 @@
 </head>
 
 <body>
-
-
   <!-- Creation de mon entete -->
   <header class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top ">
@@ -35,7 +37,7 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">&copy; CheatSheet HTML</a>
+        <a class="navbar-brand" href="#">HTML5 cheatSheet</a>
       </div>
       <ul id="navbar" class="navbar-collapse collapse navbar-right">
         <li class="active">
@@ -50,32 +52,27 @@
         </li>
         <li>
           <a href="#Listes">
-            <button type="button" class="btn btn-info">listes</button>
+            <button type="button" class="btn btn-info">liste</button>
           </a>
         </li>
         <li>
           <a href="#Liens">
-            <button type="button" class="btn btn-info">liens</button>
+            <button type="button" class="btn btn-info">lien</button>
           </a>
         </li>
         <li>
           <a href="#Images">
-            <button type="button" class="btn btn-info">Images</button>
+            <button type="button" class="btn btn-info">Image</button>
           </a>
         </li>
         <li>
           <a href="#Tableau">
-            <button type="button" class="btn btn-info">Tableaux</button>
+            <button type="button" class="btn btn-info">Tableau</button>
           </a>
         </li>
         <li>
           <a href="#">
-            <button type="button" class="btn btn-info">formulaires</button>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <button type="button" class="btn btn-info">entités</button>
+            <button type="button" class="btn btn-info">formulaire </button>
           </a>
         </li>
       </ul>
@@ -84,8 +81,10 @@
       </div>
     </nav>
     <!--  Image entete moyen et gd formats -->
-    <div class="row ">
-      <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
+    <div class="row">
+      <div class="hidden-xs col-sm-12">
+        <img src="web/img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5" />
+      </div>
     </div>
     <!-- /row -->
   </header>
@@ -97,7 +96,7 @@
       <div class="col-md-offset-1 col-md-10">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3>La structure d'une page HTML:</h3>
+            <h3>L'architecture d'une page HTML:</h3>
           </div>
           <div class="row">
             <div class="col-md-8">
@@ -311,7 +310,7 @@
                 <img src="web/img/tableau_HTML.jpeg" alt="Structure d'un tableau" title="exemple de tableau">
               </div>
               <div class="col-lg-2">
-                <button data-toggle="modal" href="#infos" class="btn btn-primary">
+                <button id="butTab" data-toggle="modal" href="#infos" class="btn btn-primary">
                   Visuel
                 </button>
                 <div class="modal" id="infos">
@@ -319,21 +318,19 @@
                     <div class=" modal-content ">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">x </button>
-                        <h4 class=" modal - title "> Tableaux en HTML5 </h4>
+                        <h4 class=" modal-title "> Tableaux en HTML5 </h4>
                       </div>
-
-
-                      <div class=" modal - body ">
-                          <img src="web/img/tableau_html5.png" alt="visuel Structure d'un tableau" title="Affichage du tableau">
+                      <div class=" modal-body ">
+                        <img src="web/img/tableau_html5.png" alt="visuel Structure d'un tableau" title="Affichage du tableau">
                       </div>
+                    </div>
                   </div>
                 </div>
+
               </div>
 
             </div>
-
           </div>
-        </div>
     </section>
     <!-- section Images -->
 
@@ -343,6 +340,7 @@
   <!-- jquery necessaire pour bootstrap -->
   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
 </body>
 
 </html>
