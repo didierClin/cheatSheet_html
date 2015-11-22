@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>CheatSheet HTML - Bootstrap inside</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -34,22 +34,14 @@
           <a class="navbar-brand" href="#">CheatSheet HTML5 </a> <img src="img/logoHTML.png" alt="Découvrez HTML5" />
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <header class="jumbotron">
-      <div class="container">
+      <div class="container logo">
           <img src="img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5">
       </div>
     </header>
@@ -62,19 +54,39 @@
           <div class="col-xs-12">
             <h1>HTML puissance 5!</h1>
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#Arch" data-toggle="tab">Architecture></a></li>
-                <li><a href="#Str" data-toggle="tab">Structure></a></li>
-                <li><a href="#Lis" data-toggle="tab">Liste></a></li>
-                <li><a href="#Lie" data-toggle="tab">Lien></a></li>
-                <li><a href="#Ima" data-toggle="tab">Image></a></li>
-                <li><a href="#Tab" data-toggle="tab">Tableau></a></li>
+                <li class="active"><a href="#Arch" data-toggle="tab">Architecture</a></li>
+                <li><a href="#Str" data-toggle="tab">Structure</a></li>
+                <li><a href="#Lis" data-toggle="tab">Liste</a></li>
+                <li><a href="#Lie" data-toggle="tab">Lien</a></li>
+                <li><a href="#Ima" data-toggle="tab">Image</a></li>
+                <li><a href="#Tab" data-toggle="tab">Tableau</a></li>
               </ul>
               <!--  .tab-content>(#Arch.tab-pane>.row.content.text-center>.col-xs-8+.col-xs-4)*6  -->
               <div class="tab-content">
                 <div id="Arch" class="tab-pane active">
                   <div class="row content text-center text-warning">
-                    <div class="col-xs-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum pariatur quidem earum vitae numquam doloremque facilis fuga autem dolorem voluptates, ut cupiditate, suscipit praesentium adipisci. Sint at minus, officiis inventore.</p></div>
-                    <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non impedit incidunt fugiat rerum, a amet delectus, quaerat esse illo voluptate, maxime corporis. Commodi quas illo exercitationem. Optio, consequatur, minus!</p></div>
+                    <div class="col-xs-8">
+                      <div class="panel-heading">
+                        <h3>Les balises structurantes :</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                          <li>&lt;header&gt;&lt;/header&gt;: délimite une zone d'entête,</li>
+                          <li>&lt;section&gt;&lt;/section&gt;: délimite une section d'affichage,</li>
+                          <li>&lt;aside&gt;&lt;/aside&gt;: délimite une zone latérale d'affichage,</li>
+                          <li>&lt;footer&gt;&lt;/footer&gt;: délimite une zone de pied de page,</li>
+                          <li>&lt;p&gt;&lt;/p&gt;: délimite un paragraphe,</li>
+                          <li>&lt;br/&gt; : c'est une balise orpheline qui ajoute un retour à la ligne,</li>
+                          <li>&lt;hx&gt;&lt;/hx&gt;: balises titres, x variant de 1 à 6 par ordre d'importance.
+                            <br/> h1 pour le titre principal, h2 pour un sous-titre, etc..
+                            <br/>
+                          </li>
+                          <li>&lt;em&gt;&lt;/em&gt;: mise en valeur faible d'un mot, d'une phrase,</li>
+                          <li>&lt;strong&gt;&lt;/strong&gt;: mise en valeur plus importante,</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-4"><img src="img/structure_fichier_html.png" alt=""></div>
                   </div>
                 </div>
                 <div id="Str" class="tab-pane two">
@@ -103,7 +115,9 @@
                 </div>
                 <div id="Tab" class="tab-pane text-success">
                   <div class="row content text-center">
-                    <div class="col-xs-6"><p>{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non impedit incidunt fugiat rerum, a amet delectus, quaerat esse illo voluptate, maxime corporis. Commodi quas illo exercitationem. Optio, consequatur, minus!}</p></div>
+                    <div class="col-xs-6">
+
+                    </div>
                     <div class="col-xs-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum pariatur quidem earum vitae numquam doloremque facilis fuga autem dolorem voluptates, ut cupiditate, suscipit praesentium adipisci. Sint at minus, officiis inventore.</p></div>
                   </div>
                 </div>

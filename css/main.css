@@ -3,8 +3,16 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body { background-color: lightgray;}
+.logo { display: none; }
+
+/*  Mise en page temporaire */
 .one{background-color: orange;}
 .two{background-color: green;}
 .three{background-color: lightblue;}
 .for{background-color: lightgray;}
 .five{background-color: darkgray;}
+
+@media screen and (min-width: 768px) {
+  .logo { display: block;}
+}
