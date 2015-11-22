@@ -3,20 +3,8 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.one{background-color: orange;}
+.two{background-color: green;}
+.three{background-color: lightblue;}
+.for{background-color: lightgray;}
+.five{background-color: darkgray;}
