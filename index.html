@@ -30,14 +30,9 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+
         <a class="navbar-brand " href="#">CheatSheet HTML5 </a>
-        <img src="img/logoHTML.png" alt="Découvrez HTML5" />
+        <img class="img-responsive" src="img/logoHTML.png" alt="Découvrez HTML5" />
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
@@ -46,16 +41,9 @@
     </div>
   </nav>
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <!--  <header class="jumbotron">
-      <div class="container logo">
-          <img src="img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5">
-      </div>
-    </header> -->
-
   <header class="row">
     <div class="container logo">
-      <img class="img-responsive" src="img/enteteHTML5_4.png" alt="cheatSheet_html5" title="Mon logo HTML5">
+      <img class="img-responsive" src="img/enteteHTML5_01.png" alt="cheatSheet_html5" title="Mon logo HTML5">
     </div>
   </header>
 
@@ -82,6 +70,7 @@ Tableau</a></li>
           </ul>
           <!--  .tab-content>(#Arch.tab-pane>.row.content.text-center>.col-xs-8+.col-xs-4)*6  -->
           <div class="tab-content">
+<!--  / Panneau sur Architecture -->
             <div id="Arch" class="tab-pane active">
               <div class="row content  text-alert">
                 <div class="panel-heading">
@@ -113,9 +102,9 @@ Tableau</a></li>
                 </div>
               </div>
             </div>
+<!--  / Panneau sur Architecture -->
 
-
-
+<!--  Panneau sur les balises structurantes -->
             <div id="Str" class="tab-pane  str">
               <div class="row content  text-warning">
                 <div class="panel-heading">
@@ -254,20 +243,20 @@ Tableau</a></li>
                     <dl>
                       <dt>&lt;img&gt; :</dt>
                       <dd>balise orpheline pour insérer une image,</dd>
-                      
+                    </dl>
                       <ul>
                         <li> src="chemin": attribut indique l'adresse de l'image</li>
                         <li> alt ="description" : attribut texte alternatif et descriptif de l'image. Apparait lorsque l'image ne peut pas etre affichée,</li>
                         <li> title="message" : affichage infobulle.</li>
                       </ul>
-                    </dl>
+                    <!-- </dl> -->
                   </div>
                 </div>
                 <div class="col-md-4 jumbotron">
                   Pour une image "lourde", on peut afficher une miniature (thumbnails) et ajouter un lien vers l'image en taille réelle. exemple:
                   <br />&lt;a href="GrandeImage.jpg"&gt; &lt;img src="vignette.png"&gt;
                   <a href="img/simplon_gateaux.jpg">
-                    <img class="logoJumbo" src="img/htmlCss.png" alt="exemple lien thumbnail" title="Cliquez pour afficher en grand">
+                    <img class="logoJumbo img-responsive" src="img/htmlCss.png" alt="exemple lien thumbnail" title="Cliquez pour afficher en grand">
                   </a>
                 </div>
                 <div class="col-md-3">
@@ -312,7 +301,7 @@ Tableau</a></li>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <img src="img/tableau_HTML.jpeg" alt="Structure d'un tableau" title="exemple de tableau">
+                  <img class="img-responsive" src="img/tableau_HTML.jpeg" alt="Structure d'un tableau" title="exemple de tableau">
                 </div>
                 <div class="col-md-1">
                   <button id="butTab" data-toggle="modal" data-target="#infos" class="btn btn-primary">
@@ -326,7 +315,7 @@ Tableau</a></li>
                           <h4 class=" modal-title "> Tableaux en HTML5 </h4>
                         </div>
                         <div class=" modal-body ">
-                          <img src="img/tableau_html5.png" alt="visuel Structure d'un tableau" title="Affichage du tableau">
+                          <img  class="img-responsive" src="img/tableau_html5.png" alt="visuel Structure d'un tableau" title="Affichage du tableau">
                         </div>
                       </div>
                     </div>

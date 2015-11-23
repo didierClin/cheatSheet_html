@@ -6,11 +6,13 @@
 body { background-color: lightgray;}
 .logo { display: none; }
 .struc { max-width: 20em; height: auto;}
+.col-xs-12 { margin-top: 3.5em;}
 .logoJumbo  { display: block; width: 10em; height: auto; margin: 1.5 auto 1.5;}
 /* marge des elements de tableaux dl */
 dt{ margin-left: 5%;}
 dd{  margin-left: 20%;}
 /* Affichage du logo au dessus du format tab */
 @media screen and (min-width: 768px) {
-  .logo { display: block; margin: 3.5em auto 1.5em }
+  .logo { display: block; margin: 3.5em auto .5em }
+  .col-xs-12 { margin-top: .5em;}
 }
